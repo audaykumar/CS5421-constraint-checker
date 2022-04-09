@@ -12,6 +12,8 @@ AS $$
 import re
 split_assertion = re.split(r'\((.*)\)',full_assertion)
 check_type = split_assertion[0].strip()
+if check_type not in ["exists", "not exists"]:
+	raise Exception(f"Syntax error: Please provide a exsists or not exists check condition")
 assertion = split_assertion[1].strip()
 
 execute_assertion = plpy.execute(f"select is_valid_syntax_check('{assertion}')")

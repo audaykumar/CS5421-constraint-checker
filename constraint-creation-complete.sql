@@ -114,12 +114,16 @@ $$ LANGUAGE plpython3u;
 CREATE OR REPLACE FUNCTION create_trigger ()
 RETURNS TRIGGER AS $$
   create_trigger_template = (
-    "CREATE CONSTRAINT TRIGGER {table_name}_{assertion_name} "
+    "CREATE CONSTRAINT TRIGGER {table_name}_assertion_trigger "
     "AFTER INSERT OR UPDATE OR DELETE "
     "ON {table_name} DEFERRABLE INITIALLY DEFERRED FOR EACH ROW "
     "EXECUTE FUNCTION constraint_checker();"
   )
-  plpy.execute(create_trigger_template.format(table_name=TD["new"]["table_name"], assertion_name=TD["new"]["assertion_name"]))
+  from plpy import spiexceptions
+  try:
+    plpy.execute(create_trigger_template.format(table_name=TD["new"]["table_name"], assertion_name=TD["new"]["assertion_name"]))
+  except spiexceptions.DuplicateObject:
+    return
 $$ LANGUAGE plpython3u;
 
 CREATE OR REPLACE TRIGGER after_create_assertion

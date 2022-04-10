@@ -116,12 +116,11 @@ RETURNS TRIGGER AS $$
   create_trigger_template = (
     "CREATE CONSTRAINT TRIGGER {table_name}_{assertion_name} "
     "AFTER INSERT OR UPDATE OR DELETE "
-    "ON {table_name} DEFERRABLE FOR EACH ROW "
+    "ON {table_name} DEFERRABLE INITIALLY DEFERRED FOR EACH ROW "
     "EXECUTE FUNCTION constraint_checker();"
   )
   plpy.execute(create_trigger_template.format(table_name=TD["new"]["table_name"], assertion_name=TD["new"]["assertion_name"]))
 $$ LANGUAGE plpython3u;
-
 
 CREATE OR REPLACE TRIGGER after_create_assertion
 AFTER INSERT ON internal_constraints FOR EACH ROW

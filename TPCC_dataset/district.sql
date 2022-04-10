@@ -1,0 +1,15 @@
+insert into district (d_w_id, d_id, d_name, d_street, d_city, d_state, d_zip, d_tax, d_ytd, d_next_o_id) values (1, 1, 'Texas', 'Hayes', 'Houston', 'TX', 77255, 19.35, 14.81, 17);
+insert into district (d_w_id, d_id, d_name, d_street, d_city, d_state, d_zip, d_tax, d_ytd, d_next_o_id) values (1, 2, 'Kentucky', 'Eastwood', 'Louisville', 'KY', 40225, 23.03, 16.94, 93);
+insert into district (d_w_id, d_id, d_name, d_street, d_city, d_state, d_zip, d_tax, d_ytd, d_next_o_id) values (1, 3, 'Virginia', 'Everett', 'Richmond', 'VA', 23228, 18.81, 2.3, 57);
+insert into district (d_w_id, d_id, d_name, d_street, d_city, d_state, d_zip, d_tax, d_ytd, d_next_o_id) values (2, 1, 'Oklahoma', 'Grover', 'Tulsa', 'OK', 74103, 23.08, 6.83, 23);
+insert into district (d_w_id, d_id, d_name, d_street, d_city, d_state, d_zip, d_tax, d_ytd, d_next_o_id) values (2, 2, 'Georgia', 'Division', 'Atlanta', 'GA', 30386, 22.59, 20.39, 71);
+insert into district (d_w_id, d_id, d_name, d_street, d_city, d_state, d_zip, d_tax, d_ytd, d_next_o_id) values (2, 3, 'Texas', 'Hazelcrest', 'Pasadena', 'TX', 77505, 12.71, 13.41, 40);
+insert into district (d_w_id, d_id, d_name, d_street, d_city, d_state, d_zip, d_tax, d_ytd, d_next_o_id) values (3, 1, 'Oklahoma', 'Superior', 'Oklahoma City', 'OK', 73124, 3.74, 1.25, 18);
+insert into district (d_w_id, d_id, d_name, d_street, d_city, d_state, d_zip, d_tax, d_ytd, d_next_o_id) values (3, 2, 'Kentucky', 'Anniversary', 'Louisville', 'KY', 40256, 3.5, 21.04, 68);
+insert into district (d_w_id, d_id, d_name, d_street, d_city, d_state, d_zip, d_tax, d_ytd, d_next_o_id) values (3, 3, 'Kansas', 'Havey', 'Shawnee Mission', 'KS', 66286, 6.25, 2.57, 58);
+insert into district (d_w_id, d_id, d_name, d_street, d_city, d_state, d_zip, d_tax, d_ytd, d_next_o_id) values (4, 1, 'Iowa', 'Westridge', 'Sioux City', 'IA', 51105, 20.67, 18.43, 40);
+insert into district (d_w_id, d_id, d_name, d_street, d_city, d_state, d_zip, d_tax, d_ytd, d_next_o_id) values (4, 2, 'Texas', 'Grover', 'El Paso', 'TX', 88553, 6.22, 23.9, 63);
+insert into district (d_w_id, d_id, d_name, d_street, d_city, d_state, d_zip, d_tax, d_ytd, d_next_o_id) values (4, 3, 'North Carolina', 'Arkansas', 'Charlotte', 'NC', 28235, 2.73, 21.54, 88);
+insert into district (d_w_id, d_id, d_name, d_street, d_city, d_state, d_zip, d_tax, d_ytd, d_next_o_id) values (5, 1, 'Colorado', 'Columbus', 'Colorado Springs', 'CO', 80940, 5.25, 20.19, 39);
+insert into district (d_w_id, d_id, d_name, d_street, d_city, d_state, d_zip, d_tax, d_ytd, d_next_o_id) values (5, 2, 'North Carolina', 'Holmberg', 'Durham', 'NC', 27705, 9.43, 6.16, 26);
+insert into district (d_w_id, d_id, d_name, d_street, d_city, d_state, d_zip, d_tax, d_ytd, d_next_o_id) values (5, 3, 'Florida', 'Morning', 'Fort Lauderdale', 'FL', 33305, 12.77, 11.3, 64);
